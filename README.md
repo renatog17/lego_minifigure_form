@@ -3,7 +3,7 @@ This repo was created to follow the react course from Alura.
 
 ---
 
-Formation: Explore React com JavaScript
+Training: Explore React com JavaScript
 
 Course: React: desenvolvendo com JavaScript
 
