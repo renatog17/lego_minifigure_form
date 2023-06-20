@@ -6,9 +6,9 @@ const Formulario = () => {
         <section className='formulario'>
             <form>
                 <h2>Faça um catálogo das suas minifigures!</h2>
-                <CampoTexto label='Nome' placeholder='Digite o seu nome' />
-                <CampoTexto label='Cargo' placeholder='Digite o seu cargo' />
-                <CampoTexto label='Imagem' placeholder='URL da sua imagem' />
+                <CampoTexto label='Apelido' placeholder='O apelido de acordo com Nicolas' />
+                <CampoTexto label='Descrição' placeholder='Descrição da minifigure' />
+                <CampoTexto label='Imagem' placeholder='Foto da minifigure' />
             </form>
         </section>
     )
