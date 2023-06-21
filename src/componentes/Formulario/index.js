@@ -9,6 +9,7 @@ const Formulario = () => {
                 <CampoTexto label='Apelido' placeholder='O apelido de acordo com Nicolas' />
                 <CampoTexto label='Descrição' placeholder='Descrição da minifigure' />
                 <CampoTexto label='Imagem' placeholder='Foto da minifigure' />
+                <CampoTexto label='Coleção' placeholder='Coleção da qual ela faz parte'/>
             </form>
         </section>
     )
