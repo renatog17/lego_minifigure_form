@@ -1,6 +1,7 @@
 import './Formulario.css'
 import CampoTexto from '../CampoTexto';
 import ListaSuspensa from '../ListaSuspensa';
+import Botao from '../Botao'
 
 const Formulario = () => {
     const series = [
@@ -17,7 +18,10 @@ const Formulario = () => {
                 <CampoTexto label='Descrição' placeholder='Descrição da minifigure' />
                 <CampoTexto label='Imagem' placeholder='Foto da minifigure' />
                 <CampoTexto label='Coleção' placeholder='Coleção da qual ela faz parte'/>
-                <ListaSuspensa label='Série' itens={series}></ListaSuspensa>
+                <ListaSuspensa label='Série' itens={series}/>
+                <Botao>
+                    Criar card
+                </Botao>
             </form>
         </section>
     )
