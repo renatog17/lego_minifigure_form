@@ -10,15 +10,20 @@ const Formulario = () => {
         'Lego city',
         'Lego city motos'
     ]
+
+    const aoSalvar = (event) =>{
+        event.preventDefault()
+        console.log('form foi submetido')
+    }
     return (
         <section className='formulario'>
-            <form>
+            <form onSubmit={aoSalvar}>
                 <h2>Faça um catálogo das suas minifigures!</h2>
-                <CampoTexto label='Apelido' placeholder='O apelido de acordo com Nicolas' />
-                <CampoTexto label='Descrição' placeholder='Descrição da minifigure' />
-                <CampoTexto label='Imagem' placeholder='Foto da minifigure' />
-                <CampoTexto label='Coleção' placeholder='Coleção da qual ela faz parte'/>
-                <ListaSuspensa label='Série' itens={series}/>
+                <CampoTexto obrigatorio={true} label='Apelido' placeholder='O apelido de acordo com Nicolas' />
+                <CampoTexto obrigatorio={true} label='Descrição' placeholder='Descrição da minifigure' />
+                <CampoTexto obrigatorio={true} label='Imagem' placeholder='Foto da minifigure' />
+                <CampoTexto obrigatorio={true} label='Coleção' placeholder='Coleção da qual ela faz parte'/>
+                <ListaSuspensa obrigatorio={true} label='Série' itens={series}/>
                 <Botao>
                     Criar card
                 </Botao>
