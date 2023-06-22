@@ -5,12 +5,7 @@ import Botao from '../Botao'
 import { useState } from 'react';
 
 const Formulario = (props) => {
-    const series = [
-        'Serie 23',
-        'Serie 24',
-        'Lego city',
-        'Lego city motos'
-    ]
+    
 
     const [apelido, setApelido] = useState('')
     const [descricao, setDescricao] = useState('')
@@ -56,7 +51,7 @@ const Formulario = (props) => {
                 <ListaSuspensa 
                     obrigatorio={true} 
                     label='Série' 
-                    itens={series} 
+                    itens={props.series} 
                     valor={serie}
                     aoAlterado={valor => setSerie(valor)}/>
                 <Botao>
