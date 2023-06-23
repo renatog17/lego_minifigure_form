@@ -30,14 +30,20 @@ function App() {
 
   const [minifigures, setMinifigures] = useState([])
   const aNovaMinifiguraAdicionada = (minifigure)=>{
-    console.log(minifigure)
+    console.log(minifigure, "aqui")
     setMinifigures([...minifigures, minifigure])
   }
   return (
     <div className="App">
       <Banner/>
       <Formulario series={series.map(serie => serie.nome)} aMinifiguraAdicionada={aNovaMinifiguraAdicionada}/>
-      {series.map(serie=> <Serie key={serie.nome} nome={serie.nome} corPrimaria={serie.corPrimaria} corSecundaria={serie.corSecundaria}/>)}
+      {series.map(
+        serie=> <Serie 
+        key={serie.nome} 
+        nome={serie.nome} 
+        corPrimaria={serie.corPrimaria} 
+        corSecundaria={serie.corSecundaria}
+        minifigures = {minifigures.filter(minifigure => minifigure.serie === serie.nome)}/>)}
 
     </div>
   );

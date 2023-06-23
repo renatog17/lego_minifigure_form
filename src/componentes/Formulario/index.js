@@ -22,6 +22,10 @@ const Formulario = (props) => {
             imagem,
             serie
         })
+        setApelido('')
+        setDescricao('')
+        setImagem('')
+        setSerie('')
     }
     return (
         <section className='formulario'>
