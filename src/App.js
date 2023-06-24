@@ -30,14 +30,16 @@ function App() {
 
   const [minifigures, setMinifigures] = useState([])
   const aNovaMinifiguraAdicionada = (minifigure)=>{
+    //debugger
     console.log(minifigure, "aqui")
     setMinifigures([...minifigures, minifigure])
   }
   return (
     <div className="App">
       <Banner/>
+      
       <Formulario series={series.map(serie => serie.nome)} aMinifiguraAdicionada={aNovaMinifiguraAdicionada}/>
-      {series.map(
+      {series.map(        
         serie=> <Serie 
         key={serie.nome} 
         nome={serie.nome} 
